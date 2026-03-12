@@ -4,14 +4,12 @@ import { Task } from "../models/taskModel";
 const { v4: uuidv4 } = require('uuid');
 
 export const getTasks = (req: Request, res: Response) => {
-    const search = req.query.search
-    const searchText = String(search)
-
+    const search = req.query.search as String
 
     if(search){
-        const filteredTasks = tasks.filter((task) => {
-            task.title.toLowerCase().includes(searchText.toLowerCase())
-        });
+        const filteredTasks = tasks.filter((task) => 
+            task.title.toLowerCase().includes(search.toLowerCase())
+        );
         return res.json(filteredTasks)
     }
     res.json(tasks)
