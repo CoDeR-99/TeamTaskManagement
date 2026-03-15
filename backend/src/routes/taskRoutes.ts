@@ -2,7 +2,9 @@ import express, {Request, Response, NextFunction} from 'express'
 import {
     getTasks,
     createTask,
-    deleteTask
+    deleteTask,
+    updateTask,
+    getTaskById
 } from '../controllers/taskController'
 
 const taskRoute = express.Router()
@@ -18,7 +20,9 @@ const verifyDeleteHeader = (req: Request, res: Response, next: NextFunction) => 
 }
 
 taskRoute.get('/', getTasks)
+taskRoute.get('/:id', getTaskById)
 taskRoute.post('/', createTask)
 taskRoute.delete('/:id', verifyDeleteHeader, deleteTask)
+taskRoute.put('/edit/:id', updateTask)
 
 export default taskRoute

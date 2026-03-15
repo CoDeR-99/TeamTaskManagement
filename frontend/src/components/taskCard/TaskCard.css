@@ -1,0 +1,21 @@
+.status-priority-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .ant-card-head {
+    font-family: cursive;
+}
+
+.edit-btn-box {
+    display: flex;
+    justify-content: center;
+}
+
+.edit-btn-box .edit-btn {
+    width: 40%;
+}
+
+.label-status {
+    font-weight: 500;
+}

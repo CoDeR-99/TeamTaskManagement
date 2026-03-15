@@ -3,5 +3,5 @@ export interface Task {
     title: string;
     description?: string;
     priority: 'LOW' | 'MEDIUM' | 'HIGH';
-    status: 'TODO' | 'IN_PROGESS' | 'DONE'
+    status: 'TODO' | 'IN_PROGRESS' | 'DONE'
 }

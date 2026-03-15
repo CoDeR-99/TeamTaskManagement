@@ -1,4 +1,19 @@
-.add-task-container {
+.add-task-btn {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 40px;
+}
+
+.no-task-box {
     display: flex;
     justify-content: center;
+}
+
+.no-task-msg {
+  height: 60px;
+  width: 75%;
+  background: #b6c2c3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

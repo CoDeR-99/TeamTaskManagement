@@ -1,0 +1,8 @@
+.search-bar {
+    width: 70%;
+}
+
+.search-bar .ant-select-input,
+.search-bar .ant-select-placeholder {
+    font-family: cursive;
+}
