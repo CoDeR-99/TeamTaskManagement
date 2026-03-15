@@ -16,3 +16,10 @@
 .form-btn-container .cancel-btn {
     margin-right: 20px;
 }
+
+.formContainer .form-title,
+.formContainer .ant-form-item-label,
+.formContainer .ant-input,
+.formContainer .ant-radio-label {
+    font-family: cursive;
+}
